@@ -710,15 +710,15 @@ background-position: 93% 10%
 .big[
 
 1. Clone **my-repo** repo on to your computer  
-(GitHub desktop: File > Clone repository)
+(Sign in to GitHub Desktop: File > Clone repository)
 
-2. Edit the README.md file using a text editor<br>and put some text in the body
+2. Edit the README.md file using a text editor<br>and put some **new** text into the file
 
 3. Save everything, commit the changes to origin with<br>an informative message
 
 4. Push changes from your local (cloned) repo to origin (the cloud)
 
-5. Check github to see if it worked
+5. Check GitHub in the browser to see if it worked
 
 ]
 
@@ -742,7 +742,7 @@ background-position: 93% 10%
 
 - Practice this procedure (clone > edit > commit > push) with dummy repos to get the hang of it
 
-- Don't be afraid to burn the house down
+- Don't be afraid to 'burn the house down' 🔥
 
 ---
 exclude: true
