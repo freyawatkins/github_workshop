@@ -3,7 +3,7 @@
   <head>
     <title>Version Control:</title>
     <meta charset="utf-8" />
-    <script src="assets/header-attrs-2.9.2/header-attrs.js"></script>
+    <script src="assets/header-attrs-2.9/header-attrs.js"></script>
     <link href="assets/remark-css-0.0.1/hygge.css" rel="stylesheet" />
     <link href="assets/remark-css-0.0.1/rutgers.css" rel="stylesheet" />
     <link href="assets/remark-css-0.0.1/rutgers-fonts.css" rel="stylesheet" />
@@ -13,9 +13,9 @@
 class: center, middle, inverse, title-slide
 
 # Version Control:
-## A Practical Introduction to Git and Github
-### <p>Joseph V. Casillas</p>
-### <p>From Proposal to Publication:</br> Pathways to Open Science | 07-14-2021</p>
+## A Practical Introduction to Git and GitHub
+### <p>Freya Watkins, materials: Joseph V. Casillas 🙏 (used with permission)</p>
+### <p>Psycholinguistics Lab Meeting | 2021-11-03</p>
 
 ---
 
@@ -26,16 +26,16 @@ class: center, middle, inverse, title-slide
 
 class: middle
 
-# Hi! 👋🏼
+# Hi! 👋
 
 .Large[
 
 |                                     |                                         |
 | ----------------------------------: | :-------------------------------------- |
-| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg> | joseph.casillas@rutgers.edu |
-| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>     | [@jvcasill](https://twitter.com/jvcasill) |
-| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>        | https://github.com/jvcasillas/github_workshop |
-| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>        | https://www.jvcasillas.com/github_workshop/index.html |
+| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg> | f.watkins@bham.ac.uk |
+| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>     | [`@freya_watkins_`](https://twitter.com/freya_watkins_) |
+| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>        | https://github.com/freyawatkins/github_workshop |
+| <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg>        | https://freyawatkins.github.io/github_workshop/index.html |
 
 ]
 
@@ -64,7 +64,7 @@ class: middle
 
 1. What is version control and why do I care?
 
-2. Get familiar with Git/Github
+2. Get familiar with Git/GitHub
 
 ]
 
@@ -169,9 +169,9 @@ background-position: 90% 10%
 
 - Git
 
-- Github
+- GitHub
 
-- Gitlab
+- GitLab (UoB/BEAR has its own version [here](https://gitlab.bham.ac.uk/users/sign_in))
 
 - Bitbucket
 
@@ -208,7 +208,7 @@ background-position: 90% 50%
 .Large[
 - .RUred[Git]
 - .RUgrey[GitHub account]
-- .RUgrey[Github Desktop]
+- .RUgrey[GitHub Desktop]
 ]
 ]
 
@@ -238,7 +238,7 @@ background-position: 90% 50%
 .Large[
 - .RUgrey[Git]
 - .RUred[GitHub account]
-- .RUgrey[Github Desktop]
+- .RUgrey[GitHub Desktop]
 ]
 ]
 
@@ -273,7 +273,7 @@ background-position: 90% 50%
 .Large[
 - .RUgrey[Git]
 - .RUgrey[GitHub account]
-- .RUred[Github Desktop]
+- .RUred[GitHub Desktop]
 ]
 ]
 
@@ -286,7 +286,7 @@ background-position: 90% 50%
 
 - You can download the app here: https://desktop.github.com
 
-- You should have this already 🙏
+- You should have this already 🙏 
 
 ]
 ]
@@ -339,7 +339,7 @@ background-position: 95% 50%
 --
 
 .Large[
-- Conceptually similar to dropbox/box/google drive/&lt;br&gt;one drive/etc., "but for nerds"
+- Conceptually similar to Dropbox/Box/Google Drive/&lt;br&gt;OneDrive/etc., "but for nerds"
 ]
 
 ---
@@ -356,7 +356,7 @@ background-position: 95% 50%
 
 - Git keeps track of incremental changes in project files
 
-- We can think of it like taking snapshots of a repository (project) 📷
+- We can think of it like taking snapshots of a repository (project) 📸
 
 - We access Git via **the command line**
 
@@ -395,14 +395,14 @@ background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/
 background-size: 600px
 background-position: 93% 50%
 
-# What is Github?
+# What is GitHub?
 
 ---
 background-image: url(./assets/img/octocat_rainbow.png)
 background-position: 93% 50%
 background-size: 300px
 
-# Github
+# GitHub
 
 ### What is it?
 
@@ -414,7 +414,7 @@ background-size: 300px
 
 - A place to store repositories (projects)
 
-- Owned by microsoft 😞
+- Owned by Microsoft 😞 
 
 ]
 
@@ -437,14 +437,14 @@ background-color: black
 # **Git**
 
 .Large[
-.white[a version control system that let's you manage and keep track of your source code history via repositories]
+.white[a version control system that lets you manage and keep track of your source code history via repositories]
 
 ]
 ]
 
 .pull-right[
 
-# **Github**
+# **GitHub**
 
 .Large[
 .white[a cloud based hosting service that lets you manage Git repositories]
@@ -607,7 +607,7 @@ background-position: 94% 10%
 
 - We **commit** changes to the repository
 
-- **README** files have special status on Github
+- **README** files have special status on GitHub
 
 ]
 
@@ -704,7 +704,7 @@ background-position: 93% 10%
 .big[
 
 1. Clone **my-repo** repo on to your computer  
-(Github desktop: File &gt; Clone repository)
+(GitHub desktop: File &gt; Clone repository)
 
 2. Edit the README.md file using a text editor&lt;br&gt;and put some text in the body
 
@@ -728,7 +728,7 @@ background-position: 93% 10%
 
 - When we finish we **push** changes from our local copy to origin
 
-- The changes are then visible on Github
+- The changes are then visible on GitHub
 
 ### Tips
 
@@ -847,7 +847,7 @@ background-position: 90% 10%
 
 4. Commit changes 
 
-5. Push changes to origin (your copy on Github)
+5. Push changes to origin (your copy on GitHub)
 
 6. Submit a **pull request**
 
@@ -895,7 +895,7 @@ background-position: 90% 10%
 
 4. Commit changes 
 
-5. Push changes to origin (your copy on Github)
+5. Push changes to origin (your copy on GitHub)
 
 6. Submit a **pull request**
 
@@ -920,9 +920,9 @@ background-position: 90% 10%
 
 ### Tips
 
-- Learn from other people by forking their projects 👍
+- Learn from other people by forking their projects 👍 
 
-- It is extremely fulfilling to contribute to other people's projects 😄
+- It is extremely fulfilling to contribute to other people's projects 😊
 
 - If you get stuck/make a mistake you can always burn the house down 🔥
 
@@ -951,7 +951,7 @@ background-image: url(https://octodex.github.com/images/labtocat.png)
 background-size: 300px
 background-position: 90% 10%
 
-# Git/Github
+# Git/GitHub
 
 ### Metaphors and terminology
 
@@ -1294,7 +1294,7 @@ background-position: 90% 90%
 count: false
 class: title-slide-section-grey, middle, center
 
-# Github integration
+# GitHub integration
 
 ---
 count: false

@@ -1,11 +1,10 @@
 ---
 title       : "Version Control:"
-subtitle    : "A Practical Introduction to Git and Github"
+subtitle    : "A Practical Introduction to Git and GitHub"
 author      : |
-  Joseph V. Casillas
+  Freya Watkins, materials: Joseph V. Casillas 🙏 (used with permission) 
 date        : |
-  From Proposal to Publication:</br>
-  Pathways to Open Science | 07-14-2021
+  Psycholinguistics Lab Meeting | 2021-11-03
 output:
   xaringan::moon_reader:
     chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
@@ -33,16 +32,16 @@ library("fontawesome")
 
 class: middle
 
-# Hi! 👋🏼
+# Hi! 👋
 
 .Large[
 
 |                                     |                                         |
 | ----------------------------------: | :-------------------------------------- |
-| `r fa("paper-plane", fill = "red")` | joseph.casillas@rutgers.edu |
-| `r fa("twitter", fill = "red")`     | [@jvcasill](https://twitter.com/jvcasill) |
-| `r fa("link", fill = "red")`        | https://github.com/jvcasillas/github_workshop |
-| `r fa("link", fill = "red")`        | https://www.jvcasillas.com/github_workshop/index.html |
+| `r fa("paper-plane", fill = "red")` | f.watkins@bham.ac.uk |
+| `r fa("twitter", fill = "red")`     | [`@freya_watkins_`](https://twitter.com/freya_watkins_) |
+| `r fa("link", fill = "red")`        | https://github.com/freyawatkins/github_workshop |
+| `r fa("link", fill = "red")`        | https://freyawatkins.github.io/github_workshop/index.html |
 
 ]
 
@@ -71,7 +70,7 @@ class: middle
 
 1. What is version control and why do I care?
 
-2. Get familiar with Git/Github
+2. Get familiar with Git/GitHub
 
 ]
 
@@ -176,9 +175,9 @@ background-position: 90% 10%
 
 - Git
 
-- Github
+- GitHub
 
-- Gitlab
+- GitLab (UoB/BEAR has its own version [here](https://gitlab.bham.ac.uk/users/sign_in))
 
 - Bitbucket
 
@@ -215,7 +214,7 @@ background-position: 90% 50%
 .Large[
 - .RUred[Git]
 - .RUgrey[GitHub account]
-- .RUgrey[Github Desktop]
+- .RUgrey[GitHub Desktop]
 ]
 ]
 
@@ -229,7 +228,7 @@ background-position: 90% 50%
 
 - Troubleshooting: https://happygitwithr.com/install-git.html
 
-- You should have this already `r emo::ji("pray")`
+- You should have this already 🙏
 
 ]
 ]
@@ -245,7 +244,7 @@ background-position: 90% 50%
 .Large[
 - .RUgrey[Git]
 - .RUred[GitHub account]
-- .RUgrey[Github Desktop]
+- .RUgrey[GitHub Desktop]
 ]
 ]
 
@@ -264,7 +263,7 @@ background-position: 90% 50%
   - shorter is better than longer
   - usually your real name (or related to it)
 
-- You should have this already `r emo::ji("pray")`
+- You should have this already 🙏
 
 ]
 ]
@@ -280,7 +279,7 @@ background-position: 90% 50%
 .Large[
 - .RUgrey[Git]
 - .RUgrey[GitHub account]
-- .RUred[Github Desktop]
+- .RUred[GitHub Desktop]
 ]
 ]
 
@@ -293,7 +292,7 @@ background-position: 90% 50%
 
 - You can download the app here: https://desktop.github.com
 
-- You should have this already `r emo::ji("pray")`
+- You should have this already 🙏 
 
 ]
 ]
@@ -346,7 +345,7 @@ background-position: 95% 50%
 --
 
 .Large[
-- Conceptually similar to dropbox/box/google drive/<br>one drive/etc., "but for nerds"
+- Conceptually similar to Dropbox/Box/Google Drive/<br>OneDrive/etc., "but for nerds"
 ]
 
 ---
@@ -363,7 +362,7 @@ background-position: 95% 50%
 
 - Git keeps track of incremental changes in project files
 
-- We can think of it like taking snapshots of a repository (project) `r emo::ji("camera")`
+- We can think of it like taking snapshots of a repository (project) 📸
 
 - We access Git via **the command line**
 
@@ -402,14 +401,14 @@ background-image: url(https://raw.githubusercontent.com/jvcasillas/media/master/
 background-size: 600px
 background-position: 93% 50%
 
-# What is Github?
+# What is GitHub?
 
 ---
 background-image: url(./assets/img/octocat_rainbow.png)
 background-position: 93% 50%
 background-size: 300px
 
-# Github
+# GitHub
 
 ### What is it?
 
@@ -421,7 +420,7 @@ background-size: 300px
 
 - A place to store repositories (projects)
 
-- Owned by microsoft `r emo::ji("sad")`
+- Owned by Microsoft 😞 
 
 ]
 
@@ -444,14 +443,14 @@ background-color: black
 # **Git**
 
 .Large[
-.white[a version control system that let's you manage and keep track of your source code history via repositories]
+.white[a version control system that lets you manage and keep track of your source code history via repositories]
 
 ]
 ]
 
 .pull-right[
 
-# **Github**
+# **GitHub**
 
 .Large[
 .white[a cloud based hosting service that lets you manage Git repositories]
@@ -614,7 +613,7 @@ background-position: 94% 10%
 
 - We **commit** changes to the repository
 
-- **README** files have special status on Github
+- **README** files have special status on GitHub
 
 ]
 
@@ -711,7 +710,7 @@ background-position: 93% 10%
 .big[
 
 1. Clone **my-repo** repo on to your computer  
-(Github desktop: File > Clone repository)
+(GitHub desktop: File > Clone repository)
 
 2. Edit the README.md file using a text editor<br>and put some text in the body
 
@@ -735,7 +734,7 @@ background-position: 93% 10%
 
 - When we finish we **push** changes from our local copy to origin
 
-- The changes are then visible on Github
+- The changes are then visible on GitHub
 
 ### Tips
 
@@ -854,7 +853,7 @@ background-position: 90% 10%
 
 4. Commit changes 
 
-5. Push changes to origin (your copy on Github)
+5. Push changes to origin (your copy on GitHub)
 
 6. Submit a **pull request**
 
@@ -902,7 +901,7 @@ background-position: 90% 10%
 
 4. Commit changes 
 
-5. Push changes to origin (your copy on Github)
+5. Push changes to origin (your copy on GitHub)
 
 6. Submit a **pull request**
 
@@ -927,11 +926,11 @@ background-position: 90% 10%
 
 ### Tips
 
-- Learn from other people by forking their projects `r emo::ji("thumb")`
+- Learn from other people by forking their projects 👍 
 
-- It is extremely fulfilling to contribute to other people's projects `r emo::ji("smile")`
+- It is extremely fulfilling to contribute to other people's projects 😊
 
-- If you get stuck/make a mistake you can always burn the house down `r emo::ji("fire")`
+- If you get stuck/make a mistake you can always burn the house down 🔥
 
 ---
 exclude: true
@@ -958,7 +957,7 @@ background-image: url(https://octodex.github.com/images/labtocat.png)
 background-size: 300px
 background-position: 90% 10%
 
-# Git/Github
+# Git/GitHub
 
 ### Metaphors and terminology
 
@@ -1301,7 +1300,7 @@ background-position: 90% 90%
 count: false
 class: title-slide-section-grey, middle, center
 
-# Github integration
+# GitHub integration
 
 ---
 count: false
