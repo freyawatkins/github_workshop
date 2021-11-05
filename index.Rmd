@@ -2,13 +2,13 @@
 title       : "Version Control:"
 subtitle    : "A Practical Introduction to Git and GitHub"
 author      : |
-  Freya Watkins, materials: Joseph V. Casillas 🙏 (used with permission) 
+  Freya Watkins<br>materials: Joseph V. Casillas<br>(reused/edited with permission 🙏) 
 date        : |
-  Psycholinguistics Lab Meeting | 2021-11-05
+  Psycholinguistics Lab Meeting<br>2021-11-05
 output:
   xaringan::moon_reader:
     chakra: "https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js"
-    css: ["hygge", "rutgers", "rutgers-fonts"]
+    #css: ["hygge", "rutgers", "rutgers-fonts"]
     lib_dir: assets
     self_contained: FALSE
     nature:
@@ -76,7 +76,7 @@ class: middle
 
 ???
 
-get familiar with git/github
+get familiar with git/GitHub
 understand conceptually what it is, what it does, what it is for
 learn how it can be a tool for our research (safety measures, promote open science)
 open doors for collaboration
@@ -212,9 +212,9 @@ background-position: 90% 50%
 ## .black[What you'll need]
 
 .Large[
-- .RUred[Git]
-- .RUgrey[GitHub account]
-- .RUgrey[GitHub Desktop]
+- .grey[**Git**]
+- .grey[GitHub account]
+- .grey[GitHub Desktop]
 ]
 ]
 
@@ -242,15 +242,15 @@ background-position: 90% 50%
 ## .black[What you'll need]
 
 .Large[
-- .RUgrey[Git]
-- .RUred[GitHub account]
-- .RUgrey[GitHub Desktop]
+- .grey[Git]
+- .red[**GitHub account**]
+- .grey[GitHub Desktop]
 ]
 ]
 
 .right-column[
 
-## **GitHub**
+## **GitHub account**
 
 .Large[
 
@@ -277,9 +277,9 @@ background-position: 90% 50%
 ## .black[What you'll need]
 
 .Large[
-- .RUgrey[Git]
-- .RUgrey[GitHub account]
-- .RUred[GitHub Desktop]
+- .grey[Git]
+- .grey[GitHub account]
+- .grey[**GitHub Desktop**]
 ]
 ]
 
@@ -362,9 +362,9 @@ background-position: 95% 50%
 
 - Git keeps track of incremental changes in project files
 
-- We can think of it like taking snapshots of a repository (project) 📸
+- We can think of it like taking snapshots 📸 of a repository 📁 (project) 
 
-- We access Git via **the command line**
+- We can access Git via **the command line**
 
 ]
 ]
@@ -416,11 +416,11 @@ background-size: 300px
 
 .Large[
 
-- An online interface to Git
+- An online interface ☁️ to Git
 
-- A place to store repositories (projects)
+- A place to store repositories 📁 (projects)
 
-- Owned by Microsoft 😞 
+- Owned by Microsoft 😞 + some ethical controversies (e.g. [ICE contract]("https://www.theatlantic.com/technology/archive/2020/01/ice-contract-github-sparks-developer-protests/604339/")) 😠<br>*disclaimer: other online Git interfaces are available*
 
 ]
 
@@ -436,24 +436,24 @@ not to late to catch up
 
 ---
 class: middle
-background-color: black
+background-color: white
 
 .pull-left[
 
 # **Git**
 
 .Large[
-.white[a version control system that lets you manage and keep track of your source code history via repositories]
+.white[a version control system that lets you manage and keep track of your source code history via repositories 📁]
 
 ]
 ]
 
 .pull-right[
 
-# **GitHub**
+# **GitHub** 
 
 .Large[
-.white[a cloud based hosting service that lets you manage Git repositories]
+.white[a cloud ☁️ based hosting service that lets you manage Git repositories 📁]
 
 ]
 ]
@@ -506,9 +506,9 @@ background-position: 95% 15%, 95% 75%
 
 # Exercise I
 
-## Your first repo
+## Your first repo 📁
 
-### 1. Create new repository
+### 1. Create new repository 📁
 
 .big[
 - Option a) Click the **New** icon anywhere 
@@ -524,7 +524,7 @@ background-position: 95% 50%
 
 # Exercise I
 
-## Your first repo
+## Your first repo 📁
 
 ### 2. Name your repo **my-repo** and<br>check the box for **Add a README file** 
 
@@ -536,7 +536,7 @@ background-position: 60% 85%
 
 # Exercise I
 
-## Your first repo
+## Your first repo 📁
 
 ### 3. Click **Create repository**
 
@@ -553,7 +553,7 @@ background-position: 50% 85%
 
 # Exercise I
 
-## Your first repo
+## Your first repo 📁
 
 ### 4. Click **README.md**
 
@@ -565,9 +565,9 @@ background-position: 50% 55%
 
 # Exercise I
 
-## Your first repo
+## Your first repo 📁
 
-### 5. Click the pencil icon and edit the file by adding some text
+### 5. Click the pencil icon ✏️️ and edit the file by adding some text
 
 ---
 count: false
@@ -577,9 +577,9 @@ background-position: 50% 75%
 
 # Exercise I
 
-## Your first repo
+## Your first repo 📁
 
-### 6. Scroll to the bottom and click **Commit changes**
+### 6. Scroll to the bottom and click **Commit changes** 📸
 
 ---
 
@@ -587,14 +587,14 @@ background-position: 50% 75%
 
 .big[
 
-1. Create new repository
+1. Create new repository  📁 
   - Option a) Click the **New** icon anywhere 
   - Option b) Click on the profile icon in the upper right hand corner, from the dropdown menu select **Your repositories**, click the **New** icon
-2. Name your repo **my-repo** and<br>check the box for **Add a README file** 
+2. Name your repo **my-repo** and<br>check the box for **Add a README file** ☑
 3. Click **Create repository**
 4. Click **README.md**
-5. Click the pencil icon and edit the file by adding some text
-6. Scroll to the bottom and click **Commit changes**
+5. Click the pencil icon ✏️️️ and edit the file by adding some text
+6. Scroll to the bottom and click **Commit changes** 📸
 
 ]
 
@@ -609,9 +609,9 @@ background-position: 94% 10%
 
 .big[
 
-- **Repositories** are projects
+- **Repositories** are projects  📁🚧
 
-- We **commit** changes to the repository
+- We **commit** 📸 changes to the repository  📁 
 
 - **README** files have special status on GitHub
 
@@ -621,7 +621,7 @@ background-position: 94% 10%
 
 .big[
 
-- Remember to think carefully about names 
+- Remember to think carefully about names 🤔 
 
 - Avoid spaces and uncommon characters (if possible)
 
@@ -705,20 +705,20 @@ background-position: 93% 10%
 
 # Exercise II
 
-### Cloning
+### Cloning 📋💻 
 
 .big[
 
-1. Clone **my-repo** repo on to your computer  
+1. Clone 📋💻 **my-repo** repo 📁 from GitHub ☁️📁️ to your computer 💻   
 (Sign in to GitHub Desktop: File > Clone repository)
 
-2. Edit the README.md file using a text editor<br>and put some **new** text into the file
+2. Edit the README.md file using a text editor<br>and put some **new** text into the file 👩‍💻
 
-3. Save everything, commit the changes to origin with<br>an informative message
+3. Save 💾 everything, commit 📸 the changes to origin with<br>an informative message 📝
 
-4. Push changes from your local (cloned) repo to origin (the cloud)
+4. Push 🢁☁️ changes from your local (cloned) 📋💻  repo to origin (the cloud) ☁️
 
-5. Check GitHub in the browser to see if it worked
+5. Check GitHub ☁️📁 in the browser to see if it worked
 
 ]
 
@@ -728,19 +728,19 @@ background-position: 93% 10%
 
 ### Key ideas
 
-- We **clone** repositories from **origin** to our computers (**local** copies)
+- We **clone** 📋💻 repositories 📁 from **origin** ☁️ to our computers 💻 (**local** copies)
 
-- We work like normal and **commit** changes
+- We work like normal 👩‍💻 and **commit** 📸📝 changes
 
-- When we finish we **push** changes from our local copy to origin
+- When we finish we **push** 🢁☁️ changes from our local copy to origin ☁️
 
-- The changes are then visible on GitHub
+- The changes are then visible on GitHub ☁️📁
 
 ### Tips
 
-- Always think carefully about where projects live 
+- Always think carefully 🤔 about where projects/repos 📁 live 
 
-- Practice this procedure (clone > edit > commit > push) with dummy repos to get the hang of it
+- Practice this procedure (clone 📋💻 > edit 👩‍💻 > commit 📸📝 > push 🢁☁️)<br>with dummy repos 📁📁 to get the hang of it
 
 - Don't be afraid to 'burn the house down' 🔥
 
@@ -826,9 +826,10 @@ submit PR
 
 ---
 class: bottom
-background-color: black
+background-color: grey
 background-image: url(https://octodex.github.com/images/grim-repo.jpg)
 background-size: contain
+background-position: 100% 50%
 
 # Exercise III
 
@@ -839,23 +840,23 @@ background-position: 90% 10%
 
 # Exercise III
 
-### Collaborating with forks
+### Collaborating with forks 📋☁️
 
 .big[
 
-1. **Fork** the github_practice repo
+1. **Fork** 📋☁️ the [github_practice](https://github.com/freyawatkins/github_practice) repo 📁
 
-2. Clone repo to your computer
+2. Clone 📋💻 repo 📁 to your computer 💻
 
 3. Open the README.md file
 
-3. Edit README.md
+3. Edit README.md 👩‍💻
 
-4. Commit changes 
+4. Commit 📸📝 changes 
 
-5. Push changes to origin (your copy on GitHub)
+5. Push 🢁☁️ changes to origin (your copy on GitHub)
 
-6. Submit a **pull request**
+6. Submit a **pull request** 💡🢂
 
 ]
 
@@ -887,23 +888,23 @@ background-position: 90% 10%
 
 # Exercise III
 
-### Collaborating with forks
+### Collaborating with forks 📋☁️
 
 .big[
 
-1. **Fork** the github_practice repo
+1. **Fork** 📋☁️ the [github_practice](https://github.com/freyawatkins/github_practice) repo 📁
 
-2. Clone repo to your computer
+2. Clone 📋💻 repo 📁 to your computer 💻
 
 3. Open the README.md file
 
-3. Edit README.md
+3. Edit README.md 👩‍💻
 
-4. Commit changes 
+4. Commit 📸📝 changes 
 
-5. Push changes to origin (your copy on GitHub)
+5. Push 🢁☁️ changes to origin (your copy on GitHub)
 
-6. Submit a **pull request**
+6. Submit a **pull request** 💡🢂
 
 ]
 
@@ -916,17 +917,17 @@ background-position: 90% 10%
 
 ### Key ideas
 
-- We can **fork** other peoples repos 
+- We can **fork** 📋☁️ other peoples repos 📁📁📁 
 
-- We can then *clone* our **forked** copy and make changes
+- We can then *clone* 📋💻 our **forked** 📋☁️ copy and make changes
 
-- Edit > commit > push
+- Edit 👩‍💻 > commit 📸📝 > push 🢁☁️
 
-- We can send our modifications to the original repo via **pull requests**
+- We can send our modifications to the original repo 📁 via **pull requests** 💡🢂
 
 ### Tips
 
-- Learn from other people by forking their projects 👍 
+- Learn from other people by forking 📋☁️ their projects 👍 
 
 - It is extremely fulfilling to contribute to other people's projects 😊
 
@@ -962,13 +963,13 @@ background-position: 90% 10%
 ### Metaphors and terminology
 
 .big[
-- repo
-- commit
-- clone
-- push
-- pull
-- fork
-- pull request
+- repo 📁
+- commit 📸📝
+- clone 📋💻
+- push 🢁☁️️
+- pull ☁️🢃️️
+- fork 📋☁️
+- pull request 💡🢂
 
 **there are more**
 ]
@@ -996,9 +997,9 @@ background-position: 90% 50%
 ---
 count: false
 class: title-slide-final
-background-image: url(https://github.com/jvcasillas/ru_xaringan/raw/master/img/logo/ru_shield.png), url(https://octodex.github.com/images/spidertocat.png)
-background-size: 70px, 250px
-background-position: 15% 15%, 95% 0%
+background-image: url(https://octodex.github.com/images/spidertocat.png)
+background-size: 250px
+background-position: 95% 0%
 
 <br>
 
@@ -1010,10 +1011,10 @@ background-position: 15% 15%, 95% 0%
 
 |                                     |                                         |
 | ----------------------------------: | :-------------------------------------- |
-| `r fa("paper-plane", fill = "red")` | .lightgrey[joseph.casillas@rutgers.edu] |
-| `r fa("twitter", fill = "red")`     | .lightgrey[@jvcasill]                   |
-| `r fa("link", fill = "red")`        | .lightgrey[https://github.com/jvcasillas/github_workshop] |
-| `r fa("link", fill = "red")`        | .lightgrey[https://www.jvcasillas.com/github_workshop/index.html] |
+| `r fa("paper-plane", fill = "red")` | f.watkins@bham.ac.uk |
+| `r fa("twitter", fill = "red")`     | [`@freya_watkins_`](https://twitter.com/freya_watkins_) |
+| `r fa("link", fill = "red")`        | https://github.com/freyawatkins/github_workshop |
+| `r fa("link", fill = "red")`        | https://freyawatkins.github.io/github_workshop/index.html |
 
 
 ]
@@ -1573,7 +1574,7 @@ before committing them to master
 count: false
 
 - When you create a branch off of master you’re essentially making a copy, or 
-snapshot of master at a specific point in time (like making a copy of 
+snapshot 📸 of master at a specific point in time (like making a copy of 
 a word file, i.e., `essay_final_version3_for_real.docx`)
 
 --
