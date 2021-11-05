@@ -1018,6 +1018,8 @@ background-position: 95% 0%
 
 # Thank you!
 
+- Thanks to [Joseph V. Casillas](https://www.jvcasillas.com/about.html) at Rutgers University for the original workshop<br>and for letting me reuse/adapt the materials 
+
 <br><br><br><br><br>
 
 .Large[
