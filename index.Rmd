@@ -339,6 +339,12 @@ background-position: 95% 50%
 --
 
 .Large[
+-  Technically, it's "better described as a “Content Management System”,<br>that turns out to be really good for version control" (Matthew Brett) 
+]
+
+--
+
+.Large[
 - Keeps track of changes you make to files
 ]
 
@@ -443,7 +449,7 @@ background-color: white
 # **Git**
 
 .Large[
-.white[a version control system that lets you manage and keep track of your source code history via repositories 📁]
+.white[a version control / content management system that lets you manage and keep track of your source code history via repositories 📁]
 
 ]
 ]
@@ -992,6 +998,13 @@ background-position: 90% 50%
 - Merge conflicts
 
 - The command line
+
+# Recommended resources:
+
+- Matthew Brett's ["The curious coder’s guide to git"](https://matthew-brett.github.io/curious-git)
+- ["The git parable"](http://practical-neuroimaging.github.io/git_parable.html)
+- [GitHub's free 1-hour "Introduction to GitHub"](https://lab.github.com/githubtraining/introduction-to-github)
+- For R users: ["Happy Git and GitHub for the useR"](http://happygitwithr.com)
 ]
 
 ---
